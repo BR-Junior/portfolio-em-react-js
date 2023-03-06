@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
+#root {
+    max-width: 1280px;
+    min-width: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter500;
+    font-size: 62.5%;
+    font-size: 1.2rem;
+    color: #C7BCB8;
+    background-color: #181818;
+}
+
+html, body {height: 100%;}

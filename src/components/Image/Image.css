@@ -1,0 +1,6 @@
+.Image {width: 50%;}
+.Image img{
+    width: 25rem;
+    height: 25em;
+    border-radius: 2rem;
+}
