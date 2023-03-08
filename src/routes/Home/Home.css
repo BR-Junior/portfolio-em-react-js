@@ -1,0 +1,23 @@
+.Home {
+    display: flex;
+    gap: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 4rem; 
+}
+.Home img{
+    width: 500px;
+    height: 500px;
+    border-radius: 2rem;
+}
+.Home .Link{
+    display: inline-block;
+    padding-right: 1rem;
+} 
+@media only screen and (max-width: 1000px) {
+    .Home {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

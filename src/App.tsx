@@ -1,13 +1,16 @@
 import './App.css'
-import Page from './components/Page'
-
+import {Outlet} from 'react-router-dom'
+import NavBar from './components/NavBar/NavBar'
+import About from './routes/About/About'
+import Skills from './routes/Skills/Skills'
 
 const App = () => {
   return (
     <div className="App">
-      <h1>Bianor app</h1>
-      <Page />
-      
+      <NavBar />
+      <Outlet />
+      <About />
+      <Skills />
     </div>
   )
 }

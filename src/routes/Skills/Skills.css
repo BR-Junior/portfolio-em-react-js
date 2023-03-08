@@ -1,0 +1,7 @@
+.Skills {
+    height: 100vh;
+    padding-top: 4rem;
+}
+.Skills .title{
+    border-top: solid 1px #fff;
+}
