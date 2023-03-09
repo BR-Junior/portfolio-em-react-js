@@ -2,13 +2,13 @@ import './Home.css'
 import Image from '../../components/CompoImage/Image'
 import Content from '../../components/Content'
 import Link from '../../components/Link/Link'
-import fundo from '../../assets/images/fundo.jpg'
+import typescript from '../../assets/images/typescript.jpg'
+import { Button } from '../../components/Style/Button'
 
 const Home = () => {
     return (
         <div className="Home">
-            
-            <img src={fundo} alt="imagem"/>
+            <img src={typescript} alt="imagem"/>
             
             <div>
                 <Content 

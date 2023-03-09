@@ -5,6 +5,7 @@ import App from './App'
 import Home from './routes/Home/Home'
 import About from './routes/About/About'
 import Skills from './routes/Skills/Skills'
+import Project from './routes/Project/Project'
 
 
 
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path:'skills',
         element:<Skills />
+      },
+      {
+        path:'project',
+        element:<Project />
       },
       {
         // :id é um valor dinamico
