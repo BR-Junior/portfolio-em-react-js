@@ -1,17 +1,18 @@
-import './NavBar.css'
 import { Link as Scroll} from 'react-scroll'
+import * as S from './NavBarStyles'
 
 const NavBar = () => {
     return(
-        <div id='header'>
-            <nav className='NavBar'>
+        <>
+        <S.Header>
+            <S.Nav>
                 <Scroll to='Home' smooth={true} duration={1000} spy={true}>Home</Scroll>
                 <Scroll to='About' smooth={true} duration={1000} >About</Scroll>
                 <Scroll to='Skills' smooth={true} duration={1000}>Skills</Scroll>
                 <Scroll to='Project' smooth={true} duration={1000}>Project</Scroll>
-            </nav>
-        </div>
+            </S.Nav>
+        </S.Header>
+        </>
     )
 }
-
 export default NavBar

@@ -1,4 +1,5 @@
 import './Project.css'
+import * as S from './ProjectStyles'
 import fundo from '../../assets/images/fundo.jpg'
 import { DataProject } from '../../assets/data/DataProject'
 
@@ -21,28 +22,47 @@ const Card = ({img, title, description, github}:Cardprops) => {
 
 const Project = () => {
     return (
-        <div className="Project">
-            <div className='title'>Project</div>
-             <div className='box'>
+        // <div className="Project">
+        //     <div className='title'>Project</div>
+        //      <div className='box'>
                 
-                <div className='section'>
+        //         <div className='section'>
                                         
+        //             {DataProject.map((item, index) => {
+        //                 return <Card 
+        //                 img={item.img}
+        //                 title={item.title}
+        //                 description={item.description}
+        //                 github={item.github}
+        //                 />
+        //                     }
+        //                 )
+        //             }
+        //         </div>
+        //     </div>
+        // </div>
+        <>
+        <S.Page>
+            <S.Title>
+                Project
+            </S.Title>
+
+            <S.Row>
+                <S.Col>
                     {DataProject.map((item, index) => {
                         return <Card 
-                        img={item.img}
-                        title={item.title}
-                        description={item.description}
-                        github={item.github}
-                        />
-                            }
-                        )
+                         img={item.img}
+                         title={item.title}
+                         description={item.description}
+                         github={item.github}
+                         />
+                        }
+                      )
                     }
-
-                    
-                </div>
-
-             </div>
-        </div>
+                </S.Col>
+            </S.Row>
+        </S.Page>
+        </>
     )
 }
 

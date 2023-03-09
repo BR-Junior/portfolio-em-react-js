@@ -9,13 +9,10 @@
 .About .box {
     display: flex;
 }
-.About .box div {
-    width: 100%;
-    margin-top: 1.5rem;
-}
 .About .box .section {
     text-align: center;
     font-size: 1.3rem;
     box-shadow: 0 0 10px #fff;
     padding: 1rem;
+    margin-top: 1.5rem;
 }
