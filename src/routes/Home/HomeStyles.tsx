@@ -10,5 +10,8 @@ export const HomeCol = styled(S.Col)`
         width: 0;
         gap: 1rem;
         margin-left: 0;
-        }
+    }
+    @media only screen and (max-width: 1000px) {
+        img {width:100%}
+    }
 `

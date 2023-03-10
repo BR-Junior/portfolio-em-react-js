@@ -6,7 +6,7 @@ type props = {
     name: string
 }
 
-const Link = ({href, name}:props) => {
+const ButtonLink = ({href, name}:props) => {
     return (
         <ButtonLinkStyles>
            <a target='_blank' href={href}>{name}</a>
@@ -14,4 +14,4 @@ const Link = ({href, name}:props) => {
     )
 }
 
-export default Link
+export default ButtonLink

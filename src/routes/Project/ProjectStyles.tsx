@@ -1,29 +1,10 @@
 import styled from 'styled-components'
+import {Col, Row} from '../../components/StylesBase'
 
-export const Page = styled.div`
-    padding-top: 4rem;
-    margin-bottom: 2rem;
-`
-
-export const Row = styled.div`
-    display: flex;
-    
-    @media only screen and (max-width: 1000px) {
-        display: flex;
-        flex-direction: column;
-    }
-`
-
-export const Col = styled.div`
+export const ProjectCol = styled(Col)`
     display: flex;
     text-align: center;
-    justify-content: space-evenly;
-    font-size: 1.5rem;
-    box-shadow: 0 0 10px ${props => props.theme.colors.text};
-    padding: 1rem;
-    margin-top: 1.5rem;
-    width: 100%;
-
+    justify-content: space-around;
     & img{
     width: 9.7rem;
     }
@@ -58,10 +39,8 @@ export const Col = styled.div`
    & a:hover {
     box-shadow: 0px 0px 20px rgb(26, 98, 205);
     }
-`
-
-export const Title = styled.div`
-    border-top: solid 1px #fff;
-    font-size: 2rem;
-    padding-top: 1rem;
+    @media only screen and (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+    }
 `

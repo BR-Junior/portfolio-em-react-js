@@ -1,16 +1,16 @@
 import {HomeCol} from './HomeStyles'
 import * as S from '../../components/StylesBase'
 import Content from '../../components/Content'
-import Link from '../../components/Link/Link'
-import typescript from '../../assets/images/typescript.jpg'
+import Link from '../../components/ButtonLink/ButtonLink'
+import gif from '../../assets/images/8c89bb567f6ea95d4618febc0774b658.gif'
 
 const Home = () => {
     return (
         <>
-        <S.Section>
+        <S.Section className='Home'>
             <S.Row>
                 <HomeCol>
-                    <img src={typescript} alt="imagem"/>
+                    <img src={gif} alt="imagem"/>
                 </HomeCol>
 
                 <HomeCol>

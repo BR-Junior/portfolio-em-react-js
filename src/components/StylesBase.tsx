@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Section = styled.div`
-    padding-top: 5rem;
+    padding-top: 4rem;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -10,6 +10,8 @@ export const Title = styled.div`
     border-top: solid 1px #fff;
     font-size: 2rem;
     padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
 `
 export const Row = styled.div`
     display: flex;

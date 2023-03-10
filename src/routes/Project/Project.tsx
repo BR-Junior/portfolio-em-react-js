@@ -1,6 +1,6 @@
 import './Project.css'
-import * as S from './ProjectStyles'
-import fundo from '../../assets/images/fundo.jpg'
+import * as S from '../../components/StylesBase'
+import {ProjectCol} from './ProjectStyles'
 import { DataProject } from '../../assets/data/DataProject'
 
 type Cardprops = {
@@ -22,33 +22,14 @@ const Card = ({img, title, description, github}:Cardprops) => {
 
 const Project = () => {
     return (
-        // <div className="Project">
-        //     <div className='title'>Project</div>
-        //      <div className='box'>
-                
-        //         <div className='section'>
-                                        
-        //             {DataProject.map((item, index) => {
-        //                 return <Card 
-        //                 img={item.img}
-        //                 title={item.title}
-        //                 description={item.description}
-        //                 github={item.github}
-        //                 />
-        //                     }
-        //                 )
-        //             }
-        //         </div>
-        //     </div>
-        // </div>
         <>
-        <S.Page>
+        <S.Section className='Project'>
             <S.Title>
                 Project
             </S.Title>
 
             <S.Row>
-                <S.Col>
+                <ProjectCol>
                     {DataProject.map((item, index) => {
                         return <Card 
                          img={item.img}
@@ -59,9 +40,9 @@ const Project = () => {
                         }
                       )
                     }
-                </S.Col>
+                </ProjectCol>
             </S.Row>
-        </S.Page>
+        </S.Section>
         </>
     )
 }
