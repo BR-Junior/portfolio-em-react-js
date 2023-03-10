@@ -1,4 +1,4 @@
-import './About.css'
+import './About.Style.tsx'
 
 const About = () => {
     return (

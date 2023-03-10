@@ -1,6 +1,6 @@
-import GlobalStyle from './styles/global'
+import GlobalStyle from './themes/global'
 import {ThemeProvider} from 'styled-components'
-import theme from './styles/themes/theme'
+import theme from './themes/theme'
 
 import {Outlet} from 'react-router-dom'
 import NavBar from './components/NavBar/NavBar'
@@ -11,14 +11,12 @@ import Project from './routes/Project/Project'
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-    <div className="App">
+    <GlobalStyle />
       <NavBar />
-      <GlobalStyle />
       <Outlet />
       <About />
       <Skills />
       <Project />
-    </div>
     </ThemeProvider>
   )
 }

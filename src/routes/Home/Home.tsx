@@ -1,47 +1,40 @@
-import * as S from './HomeStyles'
+import {HomeCol} from './HomeStyles'
+import * as S from '../../components/StylesBase'
 import Content from '../../components/Content'
 import Link from '../../components/Link/Link'
 import typescript from '../../assets/images/typescript.jpg'
 
-
 const Home = () => {
     return (
         <>
-        <S.Page className='Home'>
+        <S.Section>
             <S.Row>
-                <S.Col>
+                <HomeCol>
                     <img src={typescript} alt="imagem"/>
-                </S.Col>
-            
-                <S.Col>
-                    
-                    <Content 
-                    titulo='Bianor Ramos da Silva Junior'
-                    sibTitulo='Contatos'
-                    paragrafo= {['11 9.7439-8872',
-                    'bianor_ramos@hotmail.com']}
-                    />
+                </HomeCol>
 
-                    <Link 
-                    href='https://www.linkedin.com/in/bianor-ramos/'
-                    name='linkedin'
-                    />
-                    <Link 
-                    href='https://github.com/BR-Junior'
-                    name='github'
-                    />
+                <HomeCol>
+                <Content 
+                titulo='Bianor Ramos da Silva Junior'
+                sibTitulo='Contatos'
+                paragrafo= {['11 9.74398872',
+                            'bianor_ramos@hotmail.com']}
+                />
+                <span>
+                <Link 
+                href='https://www.linkedin.com/in/bianor-ramos/'
+                name='linkedin'
+                />
+                <Link 
+                href='https://github.com/BR-Junior'
+                name='github'
+                />
+                </span>
                 
-                    
-                
-                </S.Col>
+                </HomeCol>
             </S.Row>
-            
-            
-            <div>
-                
-            </div>
-            
-        </S.Page>
+           
+        </S.Section>
         </>
     )
 }

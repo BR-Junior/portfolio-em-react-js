@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Header = styled.div`
-    background: ${props => props.theme.colors.primary};
+    background: ${props => props.theme.colors.menu};
     position: fixed;
     right: 0;
     width: 100%;
@@ -24,6 +24,6 @@ export const Nav = styled.div`
     cursor: default;
     }
     & a:hover {
-    box-shadow: 0px 0px 20px ${props => props.theme.colors.shadow};
+    box-shadow: 0px 0px 20px ${props => props.theme.colors.btnShadow};
     }
 `

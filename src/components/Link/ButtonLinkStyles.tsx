@@ -1,4 +1,7 @@
-.Link a{
+import styled from "styled-components";
+
+const ButtonLinkStyles = styled.div`
+    a{
     border: solid 1px rgb(255, 255, 255);
     background-color: transparent;
     font-size: 1rem;
@@ -11,7 +14,9 @@
     transition: 0.6s;
     text-transform: uppercase;
     box-shadow: 0px 2px 2px lightgrey;
-}
-.Link a:hover {
-    background-color: rgb(26, 98, 205);
-}
+    }
+    & a:hover {
+    background-color: ${props => props.theme.colors.hover};
+    }
+`
+export default ButtonLinkStyles

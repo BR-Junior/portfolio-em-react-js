@@ -1,4 +1,5 @@
-import './Link.css'
+import ButtonLinkStyles from './ButtonLinkStyles'
+
 
 type props = {
     href: string
@@ -7,9 +8,9 @@ type props = {
 
 const Link = ({href, name}:props) => {
     return (
-        <div className="Link">
+        <ButtonLinkStyles>
            <a target='_blank' href={href}>{name}</a>
-        </div>
+        </ButtonLinkStyles>
     )
 }
 

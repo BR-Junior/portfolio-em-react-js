@@ -1,36 +1,14 @@
 import styled from 'styled-components'
+import * as S from '../../components/StylesBase'
 
-export const Page = styled.div`
-    display: flex;
-    padding-top: 4rem;
-`
-
-export const Row = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    @media only screen and (max-width: 1000px) {
-        display: flex;
-        flex-direction: column;
+export const HomeCol = styled(S.Col)`
+    img {
+        border-radius: 5rem;
     }
-`
-
-export const Col = styled.div`
-    margin: 0;
-
-   & img {
-        width: 500px;
-        height: 500px;
-        border-radius: 2rem;
-   }
-
-   & .Content {
-        font-size: 2rem;
-   }
-
-   & .Link {
-        display: inline-block;
-        padding-right: 1rem;
-   }
+    span {
+        display: flex;
+        width: 0;
+        gap: 1rem;
+        margin-left: 0;
+        }
 `
