@@ -5,8 +5,8 @@ type Props = {
     sibTitulo: string
     paragrafo: string | string[]
 }
-
-const Listparagrafos = props =>  <p>{props.text}</p>
+type ListparagrafosProps = {text:string}
+const Listparagrafos = ({text}:ListparagrafosProps) =>  <p>{text}</p>
 
 
 const Content = ({titulo, sibTitulo, paragrafo}: Props) => {
