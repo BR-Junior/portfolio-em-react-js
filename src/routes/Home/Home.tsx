@@ -1,40 +1,25 @@
-import {HomeCol} from './HomeStyles'
-import * as S from '../../components/StylesBase'
-import Content from '../../components/Content'
-import Link from '../../components/ButtonLink/ButtonLink'
-import gif from '../../assets/images/8c89bb567f6ea95d4618febc0774b658.gif'
+import { Section } from "../../components/StylesBase";
+
 
 const Home = () => {
     return (
         <>
-        <S.Section className='Home'>
-            <S.Row>
-                <HomeCol>
-                    <img src={gif} alt="imagem"/>
-                </HomeCol>
+            <Section className='Home'>
+              <div>
+                ABOUT ME
+              </div>
+              <div>
+                  Olá! Meu nome é Bianor Ramos da Silva Junior e sou um desenvolvedor de software.<br/>
+                  Eu tenho experiência em várias áreas,
+                  incluindo Python, TypeScript, JavaScript, HTML/CSS e Node.js. <br/>
 
-                <HomeCol>
-                <Content 
-                titulo='Bianor Ramos da Silva Junior'
-                sibTitulo='Contatos'
-                paragrafo= {['11 9.74398872',
-                            'bianor_ramos@hotmail.com']}
-                />
-                <span>
-                <Link 
-                href='https://www.linkedin.com/in/bianor-ramos/'
-                name='linkedin'
-                />
-                <Link 
-                href='https://github.com/BR-Junior'
-                name='github'
-                />
-                </span>
-                
-                </HomeCol>
-            </S.Row>
-           
-        </S.Section>
+                  Sou apaixonado por projetos de código aberto e tenho vários repositórios em meu perfil no GitHub,
+                  contendo projetos de diferentes complexidades e níveis de dificuldade. <br/>
+                  Adoro trabalhar em equipe e alguns dos meus repositórios foram desenvolvidos eS.Colaboração com outros usuários do GitHub. <br/>
+                  Se você está procurando por um desenvolvedor dedicado, que gosta de aprender e trabalhar em projetos interessantes,
+                  fique à vontade para entrar em contato.
+              </div>
+            </Section>
         </>
     )
 }

@@ -1,30 +1,17 @@
 import styled from 'styled-components'
 
 export const Section = styled.div`
-    padding-top: 4rem;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-`
-export const Title = styled.div`
-    border-top: solid 1px #fff;
-    font-size: 2rem;
-    padding-top: 1rem;
+  border: solid 1px red;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: justify;
+  div:nth-of-type(1) {
+    text-transform: uppercase;
+  }
+  div:nth-of-type(2) {
+    margin: 0;
     padding-bottom: 1rem;
-    width: 100%;
-`
-export const Row = styled.div`
-    display: flex;
-    width: 100%;
-    box-shadow: 0 0 10px ${props => props.theme.colors.shadow};
-
-    @media only screen and (max-width: 1000px) {
-        display: flex;
-        flex-direction: column;
-    }
-`
-export const Col = styled.div`
-    font-size: 1.5rem;
-    padding: 1rem;
-    width: 100%;
+  }
 `

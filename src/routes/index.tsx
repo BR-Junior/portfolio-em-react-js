@@ -1,10 +1,8 @@
 import {createBrowserRouter} from 'react-router-dom'
 import App from '../App'
 import Home from './Home/Home'
-import About from './About/About'
 import Skills from './Skills/Skills'
-import Project from './Project/Project'
-
+import Projects from '././Projects/Projects'
 
 
 export const router = createBrowserRouter([
@@ -17,16 +15,12 @@ export const router = createBrowserRouter([
         element:<Home />
       },
       {
-        path:'about',
-        element:<About />
-      },
-      {
         path:'skills',
         element:<Skills />
       },
       {
         path:'project',
-        element:<Project />
+        element:<Projects />
       },
       {
         // :id é um valor dinamico

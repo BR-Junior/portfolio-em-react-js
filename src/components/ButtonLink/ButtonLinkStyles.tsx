@@ -5,7 +5,7 @@ const ButtonLinkStyles = styled.div`
     border: solid 1px rgb(255, 255, 255);
     background-color: transparent;
     font-size: 1rem;
-    color: #fff;
+    color: rgb(14, 11, 11);
     text-decoration: none;
     display: inline-block;
     padding: 1rem;
@@ -13,7 +13,7 @@ const ButtonLinkStyles = styled.div`
     cursor: pointer;
     transition: 0.6s;
     text-transform: uppercase;
-    box-shadow: 0px 2px 2px lightgrey;
+    box-shadow: 0 2px 2px lightgrey;
     }
     & a:hover {
     background-color: ${props => props.theme.colors.hover};

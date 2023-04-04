@@ -1,41 +1,22 @@
-// import './Skills.css'
-import * as S from '../../components/StylesBase'
-import SkillsCol from './SkillsStyles'
-import { DataSkills } from '../../assets/data/DataSkills'
-
-type Cardprops = {
-    img: string
-    title: string
-}
-const Card = ({img, title}:Cardprops) => {
-    return (
-        <span>
-            <img src={img} alt="" />
-            <h4>{title}</h4>
-        </span>
-    )
-} 
-
+import { Section } from '../../components/StylesBase'
+import { Card } from '../../components/Card/Card'
+import fundo from '../../assets/images/fundo.png'
 const Skills = () => {
-    return (
-       <>
-        <S.Section className='Skills'>
-            <S.Title>
-                Skills
-            </S.Title>
-
-            <S.Row>
-                <SkillsCol>
-                    {DataSkills.map((item, index) => {
-                         return <Card img={item.img} title={item.title} />
-                             }
-                         )
-                     }
-                </SkillsCol>
-            </S.Row>
-        </S.Section>
-        </>
-    )
+  return (
+  <Section className='Skills'>
+    <div>
+      Skills
+    </div>
+    <Card
+      img={fundo}
+      title='titolo'
+      text='texto, texto, texto, texto, texto, texto, texto, texto, texto, texto, texto
+       , texto, texto, texto, texto, texto, texto, texto, texto, texto, texto
+       , texto, texto, texto, texto, texto, texto, texto, texto, texto, texto
+       , texto, texto, texto, texto, texto, texto, texto, texto'
+    />
+  </Section>
+  )
 }
 
 export default Skills
