@@ -1,27 +1,35 @@
 import styled from 'styled-components'
 
 const CardStyles = styled.div`
-  position: relative;
+  //position: relative;
   width: 250px;
-  height: 250px;
+  height: 380px;
   border-radius: 2rem;
   text-align: center;
-  //border: solid 2px rgba(26, 98, 205, 0.5);
-  overflow: hidden;
-  & span { text-transform: uppercase; }
-  & div img{
-    width: 250px;
-    height: 200px;
-    border-radius: 2rem;
+  //overflow: hidden;
+  margin-bottom: auto;
+
+  & span {
+    text-transform: uppercase;
   }
-  & p {
-    position: absolute; 
+
+  & div img {
     width: 250px;
     height: 250px;
-    backdrop-filter: blur(20px);
+    border-radius: 2rem;
   }
-  & p:hover {
-    top: 10%;    
+
+  & div p {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  & div a {
+    border: solid 1px rgba(26, 98, 205, 0.5);
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
   }
 `
 export default CardStyles

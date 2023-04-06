@@ -13,13 +13,12 @@ rgb(34,34,34)
 
 export default createGlobalStyle`
   * {
-    margin: 0 auto;
+    margin: 0 5px;
     padding: 0;
     box-sizing: border-box;
   }
 
   body,html {
-    height: 100%;
     background-image: url(${fundo});
     background-position: center;
     background-size: cover;
