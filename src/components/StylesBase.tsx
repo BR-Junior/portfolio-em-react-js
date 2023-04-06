@@ -10,7 +10,7 @@ export const Section = styled.div`
   div:nth-of-type(1) {
     text-transform: uppercase;
     width: 100%;
-    text-align: center;    
+    text-align: center;   
   }
   div:nth-of-type(2) {
     margin: 0;

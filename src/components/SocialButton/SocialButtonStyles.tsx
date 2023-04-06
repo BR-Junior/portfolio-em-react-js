@@ -8,9 +8,12 @@ const SocialButtonStyles = styled.div`
   & div:nth-of-type(1) {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 1rem;
     width: 200px;
     height: 50px;
     margin: 0 0;
+    margin-bottom: .5rem;
   }
 
   & div:nth-of-type(2) {
