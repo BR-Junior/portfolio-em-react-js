@@ -13,7 +13,7 @@ rgb(34,34,34)
 
 export default createGlobalStyle`
   * {
-    margin: 0 5px;
+    margin: 0 0;
     padding: 0;
     box-sizing: border-box;
   }
