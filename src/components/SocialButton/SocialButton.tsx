@@ -1,10 +1,11 @@
 import {SocialButtonStyles} from './SocialButtonStyles'
 import github from '../../assets/images/icon/github.svg'
 import linkedin from '../../assets/images/icon/linkedin.svg'
+import cv from  '../../assets/CvBianor.pdf'
 
 const SocialButton = () => {
   const DownloadCv = () => {
-    window.open('https://drive.google.com/file/d/19CgUrijByAv_oRWUNZtGpRqs6Gf4ol8l/view')
+    window.open(cv)
   }
   return(
     <SocialButtonStyles>
