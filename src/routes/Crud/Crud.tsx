@@ -3,7 +3,10 @@ import { Section } from "../../components/StylesBase";
 const Crud = () => {
   return(
     <Section className='Crud'>
-      Crud
+      <div>Crud</div>
+      <div>
+        conteudo
+      </div>
     </Section>
   )
 }
