@@ -4,11 +4,11 @@ import { DataProject } from '../../assets/data/DataProject'
 const Projects = () => {
   return (
     <Section className='Projects'>
-      <div>
+      <div className='title'>
         Projects
       </div>
       { DataProject.map((data)=>
-      <div>
+      <div className='content'>
         <Card
           title={data.title}
           img={data.img}

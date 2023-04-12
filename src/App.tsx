@@ -7,7 +7,7 @@ import { Wrapper } from './components/Wrapper/Wrapper'
 import { Outlet } from 'react-router-dom'
 import Skills from './routes/Skills/Skills'
 import Projects from './routes/./Projects/Projects'
-// import { Crud } from './routes/Crud/Crud'
+import { Crud } from './routes/Crud/Crud'
 
 
 
@@ -20,7 +20,7 @@ const App = () => {
         <Outlet />
         <Skills />
         <Projects />
-        {/*<Crud />*/}
+        <Crud />
       </Wrapper>
     </ThemeProvider>
   )

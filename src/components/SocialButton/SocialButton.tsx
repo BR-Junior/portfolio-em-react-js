@@ -1,7 +1,7 @@
 import {SocialButtonStyles} from './SocialButtonStyles'
 import github from '../../assets/images/icon/github.svg'
 import linkedin from '../../assets/images/icon/linkedin.svg'
-import cv from  '../../assets/CvBianor.pdf'
+import cv from  '../../assets/CV-Bianor.pdf'
 
 const SocialButton = () => {
   const DownloadCv = () => {

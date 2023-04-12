@@ -7,12 +7,13 @@ export const Section = styled.div`
   text-align: justify;
   border-bottom: solid 1px #ffffff;
   margin-bottom: 1rem;
-  div:nth-of-type(1) {
+  .title {
     text-transform: uppercase;
     width: 100%;
-    text-align: center;   
+    display: flex;
+    justify-content: center;       
   }
-  div:nth-of-type(2) {
+  div .content {
     margin: 0;
     padding-bottom: 1rem;
     display: flex;

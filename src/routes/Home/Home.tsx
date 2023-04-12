@@ -5,10 +5,10 @@ const Home = () => {
     return (
         <>
             <Section className='Home'>
-              <div>
+              <div className='title'>
                 ABOUT ME
               </div>
-              <div>
+              <div className='content'>
                   Olá! Meu nome é Bianor Ramos da Silva Junior e sou um desenvolvedor de software.<br/>
                   Eu tenho experiência em várias áreas,
                   incluindo Python, TypeScript, JavaScript, HTML/CSS e Node.js. <br/>
