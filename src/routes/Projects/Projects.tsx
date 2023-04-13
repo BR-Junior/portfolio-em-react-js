@@ -7,8 +7,8 @@ const Projects = () => {
       <div className='title'>
         Projects
       </div>
-      { DataProject.map((data)=>
-      <div className='content'>
+      { DataProject.map((data,index)=>
+      <div key={index} className='content'>
         <Card
           title={data.title}
           img={data.img}

@@ -3,7 +3,8 @@ import App from '../App'
 import Home from './Home/Home'
 import Skills from './Skills/Skills'
 import Projects from '././Projects/Projects'
-import { Crud } from './Crud/Crud'
+import { TodoList } from "./TodoList/TodoList";
+
 
 
 export const router = createBrowserRouter([
@@ -24,8 +25,8 @@ export const router = createBrowserRouter([
         element:<Projects />
       },
       {
-        path:'crud',
-        element:<Crud />
+        path:'todo-list',
+        element:<TodoList />
       },
       {
         // :id é um valor dinamico

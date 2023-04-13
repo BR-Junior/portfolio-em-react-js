@@ -9,8 +9,8 @@ const Skills = () => {
     <div className='title'>
       Skills
     </div>
-    { DataSkills.map((data)=>
-      <div className='content'>
+    { DataSkills.map((data, index)=>
+      <div key={index} className='content'>
         <Card title={data.title} img={data.img} />
       </div>) }
     {/*{ skillsList.map((data)=><div> <Card title={data.title} img={data.img} /> </div>) }*/}
