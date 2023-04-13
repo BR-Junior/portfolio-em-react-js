@@ -17,9 +17,9 @@ const TodoList = () => {
 
   const handleAddNewTask = (e) => {
     e.preventDefault()
-    // setTasks([...tasks, { id: tasks.length + 1, title: newTasks }])
-    setTasks([...tasks, { id: uuid(), title: newTasks }])
-    setNewTasks('')
+    !newTasks ? window.alert('Campo vazio')
+      : setTasks([...tasks, { id: uuid(), title: newTasks }])
+        setNewTasks('')
   }
   
   const handleEditTask = (id: string) => {
@@ -33,8 +33,12 @@ const TodoList = () => {
   const handleSaveTask = () => {
     const task = tasks.find((tasks) => tasks.id === editTasksId)
     if (task) {
-      task.title = newTasks
-      setSaveButton(false)
+      if (!newTasks) {
+        window.alert('Campo vazio')
+      }else {
+        task.title = newTasks
+        setSaveButton(false)
+      }
     }
     setTasks([...tasks])
     setNewTasks('')
@@ -83,7 +87,7 @@ const TodoList = () => {
                 <button onClick={() => handleEditTask(task.id)} className='btnEdit'>
                   Editar
                 </button>
-                <button onClick={() => handleRemoveTask(task.id)}className='btnDelete'>
+                <button onClick={() => handleRemoveTask(task.id)} className='btnDelete'>
                   Delete
                 </button>
               </li>
