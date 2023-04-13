@@ -15,7 +15,7 @@ const TodoList = () => {
   const [editTasksId, setEditTasksId] = useState('')
   const [saveButton, setSaveButton] = useState(false)
 
-  const handleAddNewTask = (e) => {
+  const handleAddNewTask = (e: any) => {
     e.preventDefault()
     !newTasks ? window.alert('Campo vazio')
       : setTasks([...tasks, { id: uuid(), title: newTasks }])
