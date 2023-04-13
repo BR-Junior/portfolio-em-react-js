@@ -63,7 +63,7 @@ const TodoList = () => {
       </div>
       <div className='content'>
         <TodoListStyles>
-          <p>Digite um uma informação aqui ela será salva no localStorage</p>
+          <p>Digite uma informação, ela será salva no localStorage</p>
           <input
             type="text"
             placeholder='Digite aqui'
